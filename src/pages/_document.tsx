@@ -60,7 +60,7 @@ class MyDocument extends Document {
             sizes="16x16"
             type="image/png"
           />
-          <link href="/static/manifest.json" rel="manifest" />
+          <link href="/manifest.json" rel="manifest" />
           <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" />
           <link href="/favicon.ico" rel="shortcut icon" />
           <link
