@@ -1,0 +1,46 @@
+.hr {
+  border: 1px solid #3c4043;
+  border-top: 0;
+}
+
+.anchor {
+  display: grid;
+  gap: 0 12px;
+  grid-template:
+    "title title" auto
+    "staffList category" auto
+    "staffList date" auto / 1fr;
+  padding: 8px 12px;
+}
+
+.title {
+  font-size: 1.4rem;
+  grid-area: title;
+  padding: 0 0 8px 0;
+}
+
+.category {
+  grid-area: category;
+  font-size: 1rem;
+  justify-self: flex-end;
+}
+
+.staffList {
+  align-self: flex-end;
+  display: flex;
+  gap: 8px;
+  grid-area: staffList;
+  justify-self: flex-end;
+}
+
+.staff {
+  border: 1px solid #fff;
+  font-size: 1rem;
+  padding: 2px 4px;
+}
+
+.date {
+  font-size: 1rem;
+  grid-area: date;
+  justify-self: flex-end;
+}

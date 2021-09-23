@@ -1,0 +1,21 @@
+.wrapper {
+  display: grid;
+  grid-template:
+    "header-wrapper" auto
+    "main" 1fr
+    "footer-wrapper" auto / 1fr;
+}
+
+.headerWrapper {
+  grid-area: header-wrapper;
+  position: sticky;
+  top: 0;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footerWrapper {
+  grid-area: footer-wrapper;
+}

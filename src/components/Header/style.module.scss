@@ -1,0 +1,21 @@
+.header {
+  align-items: center;
+  background: #171717;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+}
+
+.iconsWrapper {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1.6rem;
+}
+
+.updateIcon * {
+  stroke: #fff;
+}
