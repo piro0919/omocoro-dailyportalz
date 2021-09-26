@@ -40,7 +40,7 @@ class MyDocument extends Document {
           <meta content="#2B5797" name="msapplication-TileColor" />
           <meta content="no" name="msapplication-tap-highlight" />
           <meta content="#000000" name="theme-color" />
-          <link href="/icon-512x512.png" rel="apple-touch-icon" />
+          <link href="/logo512.png" rel="apple-touch-icon" />
           {/* <link
             href="/favicon-16x16.png"
             rel="icon"
