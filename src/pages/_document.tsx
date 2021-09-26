@@ -85,7 +85,7 @@ class MyDocument extends Document {
             name="twitter:description"
           />
           <meta
-            content="https://omocoro-daily.kk-web.link/icon-192x192.png"
+            content="https://omocoro-daily.kk-web.link/logo192.png"
             name="twitter:image"
           />
           {/* <meta content="@DavidWShadow" name="twitter:creator" /> */}
@@ -103,10 +103,10 @@ class MyDocument extends Document {
             property="og:site_name"
           />
           <meta content="https://omocoro-daily.kk-web.link" property="og:url" />
-          {/* <meta
-            content="https://omocoro-daily.kk-web.link/apple-touch-icon.png"
+          <meta
+            content="https://omocoro-daily.kk-web.link/logo512.png"
             property="og:image"
-          /> */}
+          />
         </Head>
         <body>
           <Main />
