@@ -22,7 +22,7 @@ function Header({
     <header className={styles.header}>
       <h1 className={styles.title}>
         <Link href="/">
-          <a>オモコロ非公式リーダー</a>
+          <a>オモコロ&デイリーポータルＺ非公式リーダー</a>
         </Link>
       </h1>
       <div className={styles.iconsWrapper}>

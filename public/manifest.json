@@ -19,9 +19,9 @@
       "type": "image/png"
     }
   ],
-  "name": "オモコロ非公式リーダー",
+  "name": "オモコロ&デイリーポータルＺ非公式リーダー",
   "orientation": "portrait",
-  "short_name": "オモコロ非公式リーダー",
+  "short_name": "オモコロ&DPZ非公式リーダー",
   "start_url": "/",
   "theme_color": "#fff"
 }
