@@ -63,11 +63,11 @@ export const getStaticProps: GetStaticProps<StaticProps> = async () => {
     },
   });
   const items = await Promise.all([
-    ...Array(4)
+    ...Array(5)
       .fill(undefined)
       .map((_, index) =>
         scrapeIt<{ entries: OmocoroEntry[] }>(
-          `https://omocoro.jp/newpost/page/${index}`,
+          `https://omocoro.jp/newpost/page/${index + 1}`,
           {
             entries: {
               data: {
@@ -120,36 +120,33 @@ export const getStaticProps: GetStaticProps<StaticProps> = async () => {
       },
     }
   );
-  const entries = Array.from(
-    new Set(
-      [
-        ...latestOmocoroEntries.sort(() => 0.5 - Math.random()),
-        ...omocoroEntries.sort(() => 0.5 - Math.random()),
-        ...dailyPortalZEntries
-          .sort(() => 0.5 - Math.random())
-          .map(({ staff, url, ...entry }) => {
-            let category = "";
+  const entries = [
+    ...latestOmocoroEntries.filter(
+      ({ title }) =>
+        !omocoroEntries.find(({ title: title2 }) => title === title2)
+    ),
+    ...omocoroEntries,
+    ...dailyPortalZEntries.map(({ staff, url, ...entry }) => {
+      let category = "";
 
-            if (url.includes("/tv/")) {
-              category = "プープーテレビ";
-            } else if (url.includes("/dpq/")) {
-              category = "編集部日記";
-            } else {
-              category = "特集など";
-            }
+      if (url.includes("/tv/")) {
+        category = "プープーテレビ";
+      } else if (url.includes("/dpq/")) {
+        category = "編集部日記";
+      } else {
+        category = "特集など";
+      }
 
-            return {
-              ...entry,
-              category,
-              staffs: staff.replace("（", "").replace("）", "").split("・"),
-              url: `${
-                url.startsWith("/") ? "https://dailyportalz.jp" : ""
-              }${url}`,
-            };
-          }),
-      ].filter(({ title }) => title)
-    )
-  )
+      return {
+        ...entry,
+        category,
+        staffs: staff.replace("（", "").replace("）", "").split("・"),
+        url: `${url.startsWith("/") ? "https://dailyportalz.jp" : ""}${url}`,
+      };
+    }),
+  ]
+    .filter(({ title }) => title)
+    .sort(() => 0.5 - Math.random())
     .map(({ date, ...entry }) => ({
       ...entry,
       date: dayjs(date),
