@@ -2,7 +2,7 @@
 
 > Daily article aggregator for [Omocoro](https://omocoro.jp/) and [Daily Portal Z](https://dailyportalz.jp/).
 
-[🔗 Live Site](https://omocoro-daily.kk-web.link)
+[🔗 Live Site](https://omocoro-daily.kkweb.io)
 
 ## ✨ Features
 
