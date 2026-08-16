@@ -19,7 +19,7 @@
   "name": "omocoro-dailyportalz",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "dev": "next dev",
     "start": "next start"
   },
