@@ -36,3 +36,6 @@ yarn-error.log*
 # ADD
 sw.js
 workbox*.js
+
+# Lighthouse CI reports
+.lighthouseci

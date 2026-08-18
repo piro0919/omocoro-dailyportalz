@@ -111,6 +111,9 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          {/* Vercel Analytics。@vercel/analytics は Next 13 以上が前提なので、
+              パッケージが読み込むのと同じものを直接置く。 */}
+          <script defer={true} src="/_vercel/insights/script.js" />
         </body>
       </Html>
     );

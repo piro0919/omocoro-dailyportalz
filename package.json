@@ -13,6 +13,7 @@
     "use-pwa2": "0.2.0"
   },
   "devDependencies": {
+    "@lhci/cli": "0.15.1",
     "@types/react": "17.0.24",
     "typescript": "4.4.3"
   },
@@ -21,7 +22,8 @@
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "lighthouse": "npm run build && lhci autorun"
   },
   "version": "0.1.0"
 }
