@@ -71,7 +71,7 @@ class MyDocument extends Document {
           <link href="/manifest.json" rel="manifest" />
           {/* <link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" /> */}
           <link href="/favicon.ico" rel="shortcut icon" />
-          <meta content="summary" name="twitter:card" />
+          <meta content="summary_large_image" name="twitter:card" />
           <meta
             content="https://omocoro-daily.kkweb.io"
             name="twitter:url"
@@ -85,7 +85,7 @@ class MyDocument extends Document {
             name="twitter:description"
           />
           <meta
-            content="https://omocoro-daily.kkweb.io/logo192.png"
+            content="https://omocoro-daily.kkweb.io/ogp.png"
             name="twitter:image"
           />
           {/* <meta content="@DavidWShadow" name="twitter:creator" /> */}
@@ -104,8 +104,15 @@ class MyDocument extends Document {
           />
           <meta content="https://omocoro-daily.kkweb.io" property="og:url" />
           <meta
-            content="https://omocoro-daily.kkweb.io/logo512.png"
+            content="https://omocoro-daily.kkweb.io/ogp.png"
             property="og:image"
+          />
+          <meta content="image/png" property="og:image:type" />
+          <meta content="1200" property="og:image:width" />
+          <meta content="630" property="og:image:height" />
+          <meta
+            content="オモコロ&デイリーポータルＺ非公式リーダー"
+            property="og:image:alt"
           />
         </Head>
         <body>
