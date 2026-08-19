@@ -15,6 +15,7 @@
   "devDependencies": {
     "@lhci/cli": "0.15.1",
     "@types/react": "17.0.24",
+    "next-sitemap": "4.2.3",
     "typescript": "4.4.3"
   },
   "name": "omocoro-dailyportalz",
@@ -23,7 +24,8 @@
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "dev": "next dev",
     "start": "next start",
-    "lighthouse": "npm run build && lhci autorun"
+    "lighthouse": "npm run build && lhci autorun",
+    "postbuild": "next-sitemap"
   },
   "version": "0.1.0"
 }

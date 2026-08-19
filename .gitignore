@@ -39,3 +39,7 @@ workbox*.js
 
 # Lighthouse CI reports
 .lighthouseci
+
+# next-sitemap の生成物
+/public/robots.txt
+/public/sitemap*.xml
