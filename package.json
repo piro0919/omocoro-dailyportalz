@@ -15,7 +15,7 @@
   "devDependencies": {
     "@lhci/cli": "0.15.1",
     "@types/minimatch": "5.1.2",
-    "@types/react": "17.0.24",
+    "@types/react": "17.0.93",
     "next-sitemap": "4.2.3",
     "typescript": "5.9.3"
   },
