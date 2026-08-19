@@ -1,3 +1,4 @@
+import Seo from "components/Seo";
 import "ress";
 import "../styles/global.scss";
 import type { AppProps } from "next/app";
@@ -11,14 +12,17 @@ function MyApp({ Component, pageProps }: AppProps) {
   const { enabledInstall, enabledUpdate, installPwa, updatePwa } = usePwa2();
 
   return (
-    <Wrapper
-      enabledInstall={enabledInstall}
-      enabledUpdate={enabledUpdate}
-      handleInstall={installPwa}
-      handleUpdate={updatePwa}
-    >
-      <Component {...pageProps} />
-    </Wrapper>
+    <>
+      <Seo />
+      <Wrapper
+        enabledInstall={enabledInstall}
+        enabledUpdate={enabledUpdate}
+        handleInstall={installPwa}
+        handleUpdate={updatePwa}
+      >
+        <Component {...pageProps} />
+      </Wrapper>
+    </>
   );
 }
 

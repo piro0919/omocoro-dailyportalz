@@ -30,10 +30,6 @@ class MyDocument extends Document {
             content="オモコロ&デイリーポータルＺ非公式リーダー"
             name="apple-mobile-web-app-title"
           />
-          <meta
-            content="オモコロとデイリーポータルＺから最新の記事を取得します"
-            name="description"
-          />
           <meta content="telephone=no" name="format-detection" />
           <meta content="yes" name="mobile-web-app-capable" />
           {/* <meta content="/browserconfig.xml" name="msapplication-config" /> */}
@@ -73,18 +69,6 @@ class MyDocument extends Document {
           <link href="/favicon.ico" rel="shortcut icon" />
           <meta content="summary_large_image" name="twitter:card" />
           <meta
-            content="https://omocoro-daily.kkweb.io"
-            name="twitter:url"
-          />
-          <meta
-            content="オモコロ&デイリーポータルＺ非公式リーダー"
-            name="twitter:title"
-          />
-          <meta
-            content="オモコロとデイリーポータルＺから最新の記事を取得します"
-            name="twitter:description"
-          />
-          <meta
             content="https://omocoro-daily.kkweb.io/ogp.png"
             name="twitter:image"
           />
@@ -92,17 +76,8 @@ class MyDocument extends Document {
           <meta content="website" property="og:type" />
           <meta
             content="オモコロ&デイリーポータルＺ非公式リーダー"
-            property="og:title"
-          />
-          <meta
-            content="オモコロとデイリーポータルＺから最新の記事を取得します"
-            property="og:description"
-          />
-          <meta
-            content="オモコロ&デイリーポータルＺ非公式リーダー"
             property="og:site_name"
           />
-          <meta content="https://omocoro-daily.kkweb.io" property="og:url" />
           <meta
             content="https://omocoro-daily.kkweb.io/ogp.png"
             property="og:image"

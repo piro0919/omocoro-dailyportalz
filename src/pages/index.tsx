@@ -1,6 +1,5 @@
 import Top from "components/Top";
 import { GetStaticProps } from "next";
-import Head from "next/head";
 import React from "react";
 import scrapeIt from "scrape-it";
 import dayjs from "dayjs";
@@ -25,12 +24,7 @@ export type PagesProps = {
 
 function Pages({ entries }: PagesProps) {
   return (
-    <>
-      <Head>
-        <title>オモコロ&デイリーポータルＺ非公式リーダー</title>
-      </Head>
-      <Top entries={entries} />
-    </>
+    <Top entries={entries} />
   );
 }
 
