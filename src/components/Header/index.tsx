@@ -32,12 +32,12 @@ function Header({
           </a>
         </Link> */}
         {enabledInstall ? (
-          <button onClick={handleInstall}>
+          <button aria-label="アプリをインストール" onClick={handleInstall}>
             <BsBoxArrowInDown size={20} />
           </button>
         ) : null}
         {enabledUpdate ? (
-          <button onClick={handleUpdate}>
+          <button aria-label="最新に更新" onClick={handleUpdate}>
             <GrUpdate className={styles.updateIcon} size={14} />
           </button>
         ) : null}

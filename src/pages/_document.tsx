@@ -15,7 +15,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="ja">
         <Head>
           <meta
             content="オモコロ&デイリーポータルＺ非公式リーダー"
