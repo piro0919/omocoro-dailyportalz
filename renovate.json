@@ -1,4 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>piro0919/renovate-config"]
+  "extends": ["github>piro0919/renovate-config"],
+  "packageRules": [
+    {
+      "description": "Next 11 の依存チェックが 17.0.24 より新しい @types/react を見つけられず、ビルドが落ちる。Next を上げるまで据え置く",
+      "matchPackageNames": ["@types/react"],
+      "enabled": false
+    }
+  ]
 }
