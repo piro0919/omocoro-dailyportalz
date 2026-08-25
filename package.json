@@ -24,9 +24,10 @@
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "dev": "next dev",
-    "start": "next start",
     "lighthouse": "npm run build && lhci autorun",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "start": "next start",
+    "type-check": "tsc --noEmit"
   },
   "version": "0.1.0"
 }

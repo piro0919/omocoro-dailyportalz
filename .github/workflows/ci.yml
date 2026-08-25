@@ -15,6 +15,7 @@ jobs:
           node-version: 22.23.2
           cache: npm
       - run: npm ci
-      # このリポジトリには lint も型検査も無いので、確かめられるのはビルドだけ。
+      - run: npm run type-check
+      # lint は無い。設定を1から書くことになるので入れていない。
       # build スクリプトが --openssl-legacy-provider を渡している（Next 11）。
       - run: npm run build
