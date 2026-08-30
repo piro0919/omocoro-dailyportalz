@@ -1,7 +1,6 @@
 import Footer from "components/Footer";
 import Header, { HeaderProps } from "components/Header";
-import { CSSProperties, ReactNode, useMemo } from "react";
-import { useWindowHeight } from "@react-hook/window-size";
+import { ReactNode } from "react";
 import styles from "./style.module.scss";
 
 export type WrapperProps = Pick<
@@ -18,16 +17,8 @@ function Wrapper({
   handleInstall,
   handleUpdate,
 }: WrapperProps): JSX.Element {
-  const onlyHeight = useWindowHeight();
-  const style = useMemo<CSSProperties>(
-    () => ({
-      minHeight: `${onlyHeight}px`,
-    }),
-    [onlyHeight]
-  );
-
   return (
-    <div className={styles.wrapper} style={style}>
+    <div className={styles.wrapper}>
       <div className={styles.headerWrapper}>
         <Header
           enabledInstall={enabledInstall}

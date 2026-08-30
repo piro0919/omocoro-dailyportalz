@@ -1,4 +1,6 @@
 .wrapper {
+  // ビューポートの高さは CSS で取る。JS で測ると本文をサーバーで描画できなくなる
+  min-height: 100dvh;
   display: grid;
   grid-template:
     "header-wrapper" auto
