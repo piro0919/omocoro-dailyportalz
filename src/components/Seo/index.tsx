@@ -13,9 +13,11 @@ type PageSeo = {
 
 const pages: { [pathname: string]: PageSeo } = {
   "/": {
-    description: "オモコロとデイリーポータルＺから最新の記事を取得します",
+    description:
+      "オモコロとデイリーポータルZの新着記事を、1つの画面にまとめて読めます。2サイトを行き来せず、最新100件を公開日順に追えます。",
     indexable: true,
-    title: SITE_NAME,
+    // 検索されるのは半角 Z の「デイリーポータルZ」。本家の表記に合わせる
+    title: "オモコロとデイリーポータルZの新着記事まとめ｜非公式リーダー",
   },
   "/preferences": {
     description: "表示の設定を変更します。",
@@ -24,18 +26,14 @@ const pages: { [pathname: string]: PageSeo } = {
   },
 };
 
-/**
- * _app は Wrapper を ssr:false の dynamic で読んでいる。
- * その内側にあるページの next/head はサーバーで描画されないため、
- * ページ側に <title> を書いても HTML に出ない。
- * Wrapper の外側にあたるここでまとめて出す。
- */
+/** ページごとの title と description をここでまとめて出す。 */
 function Seo(): JSX.Element {
   const { pathname } = useRouter();
   const page = pages[pathname] || pages["/"];
   const url = `${SITE_URL}${pathname === "/" ? "" : pathname}`;
+  // トップの title はそれ自体で完結しているので、サイト名を足さない
   const title =
-    page.title === SITE_NAME ? SITE_NAME : `${page.title} | ${SITE_NAME}`;
+    page === pages["/"] ? page.title : `${page.title} | ${SITE_NAME}`;
 
   return (
     <Head>
