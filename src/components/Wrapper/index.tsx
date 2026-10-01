@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import Footer from "components/Footer";
 import Header, { HeaderProps } from "components/Header";
 import { ReactNode } from "react";

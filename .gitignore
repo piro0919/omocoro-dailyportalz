@@ -43,3 +43,7 @@ workbox*.js
 # next-sitemap の生成物
 /public/robots.txt
 /public/sitemap*.xml
+
+# Next.js が生成する型
+next-env.d.ts
+*.tsbuildinfo

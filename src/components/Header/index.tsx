@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import React, { MouseEventHandler } from "react";
 import styles from "./style.module.scss";
 import Link from "next/link";
@@ -21,15 +22,11 @@ function Header({
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        <Link href="/">
-          <a>オモコロ&デイリーポータルＺ非公式リーダー</a>
-        </Link>
+        <Link href="/">オモコロ&デイリーポータルＺ非公式リーダー</Link>
       </h1>
       <div className={styles.iconsWrapper}>
         {/* <Link href="/preferences">
-          <a>
-            <AiOutlineSetting size={18} />
-          </a>
+          <AiOutlineSetting size={18} />
         </Link> */}
         {enabledInstall ? (
           <button aria-label="アプリをインストール" onClick={handleInstall}>

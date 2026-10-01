@@ -22,12 +22,12 @@
   "name": "omocoro-dailyportalz",
   "private": true,
   "scripts": {
-    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "build": "next build --webpack",
     "dev": "next dev",
     "lighthouse": "npm run build && lhci autorun",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "next typegen && tsc --noEmit"
   },
   "version": "0.1.0"
 }

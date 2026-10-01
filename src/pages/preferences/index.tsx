@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import PreferencesTop from "components/PreferencesTop";
 import React from "react";
 

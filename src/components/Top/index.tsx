@@ -1,3 +1,4 @@
+import type { JSX } from "react";
 import { useMemo } from "react";
 import styles from "./style.module.scss";
 
