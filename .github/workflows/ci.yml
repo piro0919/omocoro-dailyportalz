@@ -12,10 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 22.23.3
+          node-version: 24.18.0
           cache: npm
       - run: npm ci
       - run: npm run type-check
       # lint は無い。設定を1から書くことになるので入れていない。
-      # build スクリプトが --openssl-legacy-provider を渡している（Next 11）。
       - run: npm run build

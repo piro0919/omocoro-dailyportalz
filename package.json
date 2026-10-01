@@ -19,6 +19,9 @@
     "next-sitemap": "4.2.3",
     "typescript": "5.9.3"
   },
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "name": "omocoro-dailyportalz",
   "private": true,
   "scripts": {

@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "startServerCommand": "npm run start -- --port 4173",
-      "startServerReadyPattern": "started server",
+      "startServerReadyPattern": "Ready in",
       "url": ["http://localhost:4173/"],
       "numberOfRuns": 3
     },
